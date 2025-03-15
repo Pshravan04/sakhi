@@ -12,7 +12,6 @@
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    object-position: center center;
     border: 10px solid #f2f2f2;
     box-shadow: 0 0 4px #0007;
     z-index: 2;
@@ -49,15 +48,15 @@
   }
   .gallery > img:nth-child(6) {
     animation-delay: calc(-0.10*var(--d));
-    --r: -8deg;
+    --r: -6deg;
   }
   .gallery > img:nth-child(7) {
     animation-delay: calc(-0.12*var(--d));
-    --r: -8deg;
+    --r: -3deg;
   }
   .gallery > img:nth-child(8) {
     animation-delay: calc(-0.14*var(--d));
-    --r: -8deg;
+    --r: 18deg;
   }
   .gallery > img:nth-child(9) {
     animation-delay: calc(-0.16*var(--d));
@@ -146,6 +145,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  
     margin-bottom: 60px;
   }
-}
+  
+  .gallery {
+    --d: 10s;
+    /* duration */
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    width: 150px;
+    margin-left: 60px;
+  }
+  }
